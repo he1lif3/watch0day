@@ -6,6 +6,8 @@ on:
   workflow_dispatch:
 
 jobs:
+  permissions:
+    contents: write
   crawl-and-update:
     runs-on: ubuntu-22.04
     timeout-minutes: 30
